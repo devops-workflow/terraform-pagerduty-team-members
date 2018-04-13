@@ -1,5 +1,8 @@
 # https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html
 
+# TODO:
+#   option to use user emails or IDs
+
 module "enabled" {
   source  = "devops-workflow/boolean/local"
   version = "0.1.1"

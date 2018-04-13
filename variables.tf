@@ -4,9 +4,10 @@ variable "enabled" {
 }
 
 variable "member_emails" {
-  default = []
+  description = "List of email addresses of members to manage in team"
+  type        = "list"
 }
 
 variable "team_id" {
-  default = ""
+  description = "ID of the team to manage members in"
 }
