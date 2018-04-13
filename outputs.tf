@@ -15,5 +15,5 @@ output "user_name" {
 
 output "team_id" {
   description = "Team ID"
-  value       = "${element(pagerduty_team_membership.this.*.team_id, 0)}"
+  value       = "${element(concat(pagerduty_team_membership.this.*.team_id, list("")), 0)}"
 }
